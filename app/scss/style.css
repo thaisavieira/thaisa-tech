@@ -1,3 +1,33 @@
+@-webkit-keyframes fade-in {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -73,6 +103,36 @@ a, a:visited, a:hover {
   }
 }
 
+.header.open .overlay {
+  -webkit-animation: fade-in 300ms ease-in-out   forwards;
+          animation: fade-in 300ms ease-in-out   forwards;
+}
+
+.header.open .header__menu > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open .header__menu > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__menu > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header .overlay {
+  opacity: 0;
+  position: absolute;
+  top: 6.5rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a94545), to(transparent));
+  background-image: linear-gradient(#a94545, transparent);
+}
+
 .header nav {
   padding: 24px;
 }
@@ -88,8 +148,8 @@ a, a:visited, a:hover {
   background-color: #d64949;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  -webkit-transform-origin: left center;
-          transform-origin: left center;
+  -webkit-transform-origin: 5px 1px;
+          transform-origin: 5px 1px;
 }
 
 .header__menu > span:not(:last-child) {
