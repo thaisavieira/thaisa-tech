@@ -2,7 +2,7 @@
 // Hamburger open styles
 &.open {
 
-    .header__menu {
+    .header__toggle {
         > span:first-child {
             transform: rotate(45deg);
         }
@@ -36,7 +36,7 @@
         }
     }
 
-    &__menu{ //mobile menu
+    &__toggle{ //mobile menu
         > span{
             display: block;
             width: 26px;
@@ -63,6 +63,25 @@
                 }
         }
 
+    }
+
+    &__menu {
+      background: #DFDFDE;
+      padding: 1.625rem;
+      border-radius: 4px;
+      position: absolute;
+      width: 10rem;
+      margin-left: auto;
+      margin-right: auto; 
+      margin-top: 1.5rem;
+      position: relative;
+        
+        a {
+            color: #d64949;
+            padding: 0.625rem;
+            display: block;
+            text-align: center;
+        }
     }
 
     &__links {

@@ -1,3 +1,7 @@
+.has-fade {
+  visibility: hidden;
+}
+
 @-webkit-keyframes fade-in {
   from {
     visibility: hidden;
@@ -8,6 +12,7 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -22,13 +27,14 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
 
 .fade-in {
-  -webkit-animation: fade-in 300ms ease-in-out   forwards;
-          animation: fade-in 300ms ease-in-out   forwards;
+  -webkit-animation: fade-in 200ms ease-in-out   forwards;
+          animation: fade-in 200ms ease-in-out   forwards;
 }
 
 @-webkit-keyframes fade-out {
@@ -62,8 +68,8 @@
 }
 
 .fade-out {
-  -webkit-animation: fade-out 300ms ease-in-out   forwards;
-          animation: fade-out 300ms ease-in-out   forwards;
+  -webkit-animation: fade-out 200ms ease-in-out   forwards;
+          animation: fade-out 200ms ease-in-out   forwards;
 }
 
 html {
@@ -90,6 +96,11 @@ body {
 a, a:visited, a:hover {
   text-decoration: none;
   color: #e9eaec;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .flex {
@@ -141,16 +152,16 @@ a, a:visited, a:hover {
   }
 }
 
-.header.open .header__menu > span:first-child {
+.header.open .header__toggle > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.header.open .header__menu > span:nth-child(2) {
+.header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
 
-.header.open .header__menu > span:last-child {
+.header.open .header__toggle > span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -175,7 +186,7 @@ a, a:visited, a:hover {
   width: 8.8125rem;
 }
 
-.header__menu > span {
+.header__toggle > span {
   display: block;
   width: 26px;
   height: 2px;
@@ -186,22 +197,41 @@ a, a:visited, a:hover {
           transform-origin: 5px 1px;
 }
 
-.header__menu > span:not(:last-child) {
+.header__toggle > span:not(:last-child) {
   margin-bottom: 3px;
 }
 
-.header__menu.open > span:first-child {
+.header__toggle.open > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.header__menu.open > span:nth-child(2) {
+.header__toggle.open > span:nth-child(2) {
   opacity: 0;
 }
 
-.header__menu.open > span:last-child {
+.header__toggle.open > span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.header__menu {
+  background: #DFDFDE;
+  padding: 1.625rem;
+  border-radius: 4px;
+  position: absolute;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.header__menu a {
+  color: #d64949;
+  padding: 0.625rem;
+  display: block;
+  text-align: center;
 }
 
 .header__links a {
