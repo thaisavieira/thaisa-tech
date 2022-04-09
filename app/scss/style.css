@@ -78,7 +78,8 @@ html {
           box-sizing: border-box;
 }
 
-*, *::before *::after {
+*,
+*::before *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -93,7 +94,9 @@ body {
   background-color: #e8e3e3;
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   text-decoration: none;
   color: #e9eaec;
 }
@@ -101,6 +104,50 @@ a, a:visited, a:hover {
 .container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.textBox {
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+img {
+  max-width: 100%;
+}
+
+.introduction {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.95rem, 10vw, 1.875rem);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.introduction_2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.75rem, 5vw, 1.5625rem);
+  font-style: italic;
+}
+
+.skills {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.5rem;
+}
+
+.flexBoxHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .flex {
@@ -127,7 +174,8 @@ a, a:visited, a:hover {
           align-items: center;
 }
 
-.button, .button {
+.button,
+.button {
   padding: 0.875rem 2.1875rem;
   border-radius: 10px;
   border-width: 0.1rem;
@@ -137,7 +185,8 @@ a, a:visited, a:hover {
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   cursor: pointer;
   font-weight: 400;
-  background-color: #d64949;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E65758), to(#771d32));
+  background-image: linear-gradient(#E65758, #771d32);
 }
 
 @media (max-width: 63.937em) {
@@ -216,15 +265,14 @@ a, a:visited, a:hover {
 }
 
 .header__menu {
+  position: absolute;
+  width: calc(100% - 11rem);
   background: #DFDFDE;
   padding: 1.625rem;
   border-radius: 4px;
-  position: absolute;
-  width: 10rem;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: 3.5rem;
   margin-top: 1.5rem;
-  position: relative;
 }
 
 .header__menu a {

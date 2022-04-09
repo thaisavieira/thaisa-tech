@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/jpg" sizes="32x32" href="./src/icon.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <!--title sections-->
   <link rel="stylesheet" href="app/scss/style.css">
 
-  
+
   <title> Thaísa Vieira | Desenvolvedora Front end</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
   <header class="header">
     <div class="overlay has-fade "></div>
@@ -26,7 +42,7 @@
         <img src="./src/Thaísa Vieira Icon.png" alt="thaiLogo">
       </a>
 
-      <a id = 'btnHamburger' href="#" class="header__toggle  hide-for-desktop" href="#">
+      <a id='btnHamburger' href="#" class="header__toggle  hide-for-desktop" href="#">
         <span></span>
         <span></span>
         <span></span>
@@ -37,7 +53,7 @@
       </div>
       <a href="#" class="button header__cta hide-for-mobile">Contato</a>
     </nav>
-    <div class="header__menu has-fade ">
+    <div class="header__menu has-fade hide-for-desktop">
       <a href="http://">Home</a>
       <a href="http://">Habilidades</a>
       <a href="http://">Projetos</a>
@@ -46,11 +62,42 @@
     </div>
   </header>
 
-<center>
+  <div class="flexBoxHome">
+    <div class="textBox">
+      <div class="introduction">
+        Eu sou Thaísa Vieira,
+      </div>
+      <div class="introduction_2">
+        desenvolvedora front end.
+      </div>
+    </div>
+    <picture>
+      <source media="(max-width:375px)" srcset="imagemPrincipal.png">
+      <source media="(max-width:15px)" srcset="15px.png">
+      <source media="(max-width:4px)" srcset="4px.png">
+      <img src="/src/imagemPrincipal.png">
+    </picture>
+  </div>
+  <!--Foto para colocar do lado da introduction-->
+  <!--Body copy com as minhas habilidades-->
+  <div class="habilidades">
+    <div class="skills">Habilidades</div>
+    <ul>
+      <li>HTML/CSS</li>
+      <li>JavaScript</li>
+      <li>React Native</li>
+      <li>Java</l1>
+      <li>Design responsivo</li>
+      <li>Controle de versão/GIT</li>
+      <li>Ferramentas de desenvolvimento no navegador</l1>
+      <li>Ferramentas de automação e desempenho web</li>
+    </ul>
+  </div>
+  <!--Imagens e vídeos dos meus projetos-->
+  <!--Article sobre mim-->
+  <!--Fotter + contato -->
 
-<h2>O website do meu portifólio ainda está em construção.</h2>
-</center>
-<!--
+  <!--
   Home
   Sobre mim
   Habilidades
@@ -128,11 +175,13 @@
 
   © Easybank. All Rights Reserved
   -->
- <h3>
-  <div class="attribution">
-   Entre em contato comigo pelo <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5515996338194" >Whatsapp</a>. 
-    Feito por <a href="https://www.linkedin.com/in/thaísa-de-jesus-vieira/">Thaísa Vieira</a>.
-  </div></h3>
+  <h3>
+    <div class="attribution">
+      Entre em contato comigo pelo <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5515996338194">Whatsapp</a>.
+      Feito por <a href="https://www.linkedin.com/in/thaísa-de-jesus-vieira/">Thaísa Vieira</a>.
+    </div>
+  </h3>
   <script src="./app/js/script.js"></script>
 </body>
+
 </html>

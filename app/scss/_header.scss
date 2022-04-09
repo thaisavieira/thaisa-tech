@@ -1,29 +1,33 @@
-.header{
-// Hamburger open styles
-&.open {
+.header {
 
-    .header__toggle {
-        > span:first-child {
-            transform: rotate(45deg);
-        }
-        > span:nth-child(2){
-            opacity: 0;
-        }
-            > span:last-child{
-             transform: rotate(-45deg);   
+    // Hamburger open styles
+    &.open {
+
+        .header__toggle {
+            >span:first-child {
+                transform: rotate(45deg);
             }
+
+            >span:nth-child(2) {
+                opacity: 0;
+            }
+
+            >span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
     }
+
+    .overlay {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 6.5rem;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient($coolColor, transparent);
     }
-.overlay {
-    display: block;
-    opacity: 0;
-    position: absolute;
-    top: 6.5rem;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-image: linear-gradient($coolColor, transparent);
-}
 
     nav {
         padding: 24px;
@@ -31,51 +35,53 @@
     }
 
     &__logo {
-        img{
+        img {
             width: 8.8125rem;
         }
     }
 
-    &__toggle{ //mobile menu
-        > span{
+    &__toggle {
+
+        //mobile menu
+        >span {
             display: block;
             width: 26px;
             height: 2px;
             background-color: #d64949;
             transition: all 300ms ease-in-out;
-            transform-origin:  5px 1px;
+            transform-origin: 5px 1px;
 
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 3px;
             }
         }
 
         &.open {
-            > span:first-child {
+            >span:first-child {
                 transform: rotate(45deg);
             }
 
-            > span:nth-child(2){
+            >span:nth-child(2) {
                 opacity: 0;
             }
-                > span:last-child{
-                 transform: rotate(-45deg);   
-                }
+
+            >span:last-child {
+                transform: rotate(-45deg);
+            }
         }
 
     }
 
     &__menu {
-      background: #DFDFDE;
-      padding: 1.625rem;
-      border-radius: 4px;
-      position: absolute;
-      width: 10rem;
-      margin-left: auto;
-      margin-right: auto; 
-      margin-top: 1.5rem;
-      position: relative;
-        
+        position: absolute;
+        width: calc(100% - 11rem);
+        background: #DFDFDE;
+        padding: 1.625rem;
+        border-radius: 4px;
+        margin-right: auto;
+        margin-left: 3.5rem;
+        margin-top: 1.5rem;
+
         a {
             color: #d64949;
             padding: 0.625rem;
@@ -85,37 +91,38 @@
     }
 
     &__links {
-       
+
 
         a {
-          position: relative;
-          font-size: $font-sm; 
-          color: 	#414a4c; 
-          transition: color 300ms ease-in-out;
+            position: relative;
+            font-size: $font-sm;
+            color: #414a4c;
+            transition: color 300ms ease-in-out;
 
-          &:not(:last-child){
-              margin-right: 32px;
-          }
-          
-          &::before{
-              content: "";
-              display: block;
-              position: absolute;
-              height: 5px;
-              left: 0;
-              right: 0;
-              bottom: -30px;
-              background-color: #990000;
-              opacity: 0;
-              transition: opacity 300ms ease-in-out;
-          }
-          &:hover {
-              color: #d64949;
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
 
-              &::before{
-                opacity: 1;
-              }
-          }
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -30px;
+                background-color: #990000;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                color: #d64949;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
         }
     }
 
@@ -128,8 +135,7 @@
             opacity: 0.75;
             background-color: #ae0001;
         }
-    
+
     }
 
 }
-
