@@ -130,12 +130,21 @@ img {
     border: 3px solid #292939;
     border-radius: 5px;
     padding: 8px;
+    
   }
 
 
   .item1 { 
     /* flex:0 1 auto; */
-    align-self:center;
+    align-self: stretch;
+    text-align: center
+    
+  }
+
+  .item1 img {
+      border-radius: 8px;
+    
+
   }
 			
   .item2 { 
@@ -177,13 +186,11 @@ img {
 
 
   .itemHabilidades { 
-    text-align: center;
     align-self: stretch;
     align-content: stretch;
     text-align: center;
     background-color: #e8e3e3;
     height: 100%;
-    margin: 15px;
     gap: 5px;
     
   }		
@@ -246,7 +253,7 @@ button {
     /* Variables */
    --button_radius: 0.75em;
    --button_color: #e8e8e8;
-   --button_outline_color: #b51a3a;
+   --button_outline_color: #8F2831;
    font-family: 'Public Sans', sans-serif;
    font-size: 17px;
    font-weight: bold;

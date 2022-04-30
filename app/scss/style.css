@@ -1,3 +1,15 @@
+@media screen and (min-width: 0px) and (max-width: 440px) and (orientation: portrait) {
+  div > .hide-on-small-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 440px) and (orientation: landscape) {
+  div > .hide-on-small-only {
+    display: none;
+  }
+}
+
 .has-fade {
   visibility: hidden;
 }
@@ -251,9 +263,14 @@ img {
 
 .item1 {
   /* flex:0 1 auto; */
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  text-align: center;
+}
+
+.item1 img {
+  border-radius: 8px;
 }
 
 .item2 {
@@ -305,7 +322,6 @@ img {
 }
 
 .itemHabilidades {
-  text-align: center;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
@@ -314,7 +330,6 @@ img {
   text-align: center;
   background-color: #e8e3e3;
   height: 100%;
-  margin: 15px;
   gap: 5px;
 }
 
@@ -383,7 +398,7 @@ button {
   /* Variables */
   --button_radius: 0.75em;
   --button_color: #e8e8e8;
-  --button_outline_color: #b51a3a;
+  --button_outline_color: #8F2831;
   font-family: 'Public Sans', sans-serif;
   font-size: 17px;
   font-weight: bold;

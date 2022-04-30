@@ -32,8 +32,8 @@
         <span></span>
       </a>
       <div class="header__links hide-for-mobile">
-        <a href="#">Home</a><a href="https://thaisavieira.github.io/thaisa-tech/habilidades">Habilidades</a><a
-          href="#">Projetos</a><a href="#">Sobre</a>
+        <a href="#content1"class="anchor">Home</a><a href="#content2"class="anchor">Habilidades</a><a
+          href="#content3"class="anchor">Projetos</a><a href="#content4"class="anchor">Sobre</a>
       </div>
       <a href="#" class="button header__cta hide-for-mobile">Contato</a>
     </nav>
@@ -46,7 +46,7 @@
     </div>
   </header>
 
-  <div class="flexBoxHome">
+  <div class="flexBoxHome" id="content1" class="content1"> 
     <div class="textBox">
       <div class="introduction">
         Eu sou Thaísa Vieira,
@@ -55,15 +55,17 @@
         desenvolvedora front end.
       </div>
     </div>
-    <picture>
-      <source media="(max-width:375px)" srcset="imagemPrincipal.png">
-      <source media="(max-width:15px)" srcset="15px.png">
-      <source media="(max-width:4px)" srcset="4px.png">
-      <source media="(max-width:1px)" srcset="1px.png">
-      <img src="./src/imagemPrincipal.png">
-    </picture>
+    <div class="hide-on-small-only">
+      <picture>
+        <source media="(max-width:375px)" srcset="imagemPrincipal.png">
+        <source media="(max-width:15px)" srcset="15px.png">
+        <source media="(max-width:4px)" srcset="4px.png">
+        <source media="(max-width:1px)" srcset="1px.png">
+        <img src="./src/imagemPrincipal.png">
+      </picture>
+    </div>
   </div>
-  <div class="skills">
+  <div class="skills"id="content2" class="content2">
     <h3>💻 Habilidades </h3>
   </div>
   <div class="flexContainerHabilidades">
@@ -96,12 +98,12 @@
       </div>
     </div>
   </div>
-  <div class="projetos">
+  <div class="projetos"id="content3" class="content3">
     <h3>💻 Projetos </h3>
     <div class="saibaMaisProjetos"></div>
 
   </div>
-  <div class="sobre">
+  <div class="sobre"id="content4" class="content4">
     <h3>💻 Sobre mim </h3>
   </div>
   <div class="flex-container">
@@ -129,16 +131,22 @@
     <div class="item3">
       <h4>Acompanhe meu trabalho:</h4>
       <div class="CodePen">
+        <a href="https://codepen.io/thaisavieira"target="_blank">
         <p></p><i class="fa-brands fa-codepen fa-2xl"></i>
         <p>CodePen</p>
+      </a>
       </div>
       <div class="GitHub">
+        <a href="https://github.com/thaisavieira"target="_blank">
         <p></p><i class="fa-brands fa-github fa-2xl"></i>
         <p>GitHub</p>
+      </a>
       </div>
       <div class="Linkedin">
+        <a href="https://www.linkedin.com/in/thaísa-de-jesus-vieira/"target="_blank">
         <p></p><i class="fa-brands fa-linkedin fa-2xl"></i>
         <p>Linkedin</p>
+      </a>
       </div>
     </div>
   </div>
