@@ -106,8 +106,8 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-}
-
+} 
+   
 .flex-container {
     display: flex;
     
@@ -316,3 +316,34 @@ button {
         display: none;
     }
 }
+
+.flex-container-projetos {
+    display: flex;
+    
+    justify-content: center; 
+    align-items: center; 
+    /* flex-flow: column wrap; */ 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    align-content: space-around;
+
+    background-color: #e8e3e3;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+    align-self: stretch;
+    align-content: stretch;
+    text-align: justify;
+
+
+  }
+
+  .flex-container-projetos > div{
+    background: #ba494b;
+    border: 3px solid #292939;
+    border-radius: 5px;
+    align-self: stretch;
+    align-content: stretch;
+    text-align: justify;
+    
+  }
