@@ -45,18 +45,18 @@
 }
 
 .fade-in {
-  -webkit-animation: fade-in 200ms ease-in-out   forwards;
-          animation: fade-in 200ms ease-in-out   forwards;
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
 }
 
 @-webkit-keyframes fade-out {
   from {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
   }
   99% {
-    opacity: 0;
     visibility: visible;
+    opacity: 0;
   }
   to {
     visibility: hidden;
@@ -66,12 +66,12 @@
 
 @keyframes fade-out {
   from {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
   }
   99% {
-    opacity: 0;
     visibility: visible;
+    opacity: 0;
   }
   to {
     visibility: hidden;
@@ -80,8 +80,8 @@
 }
 
 .fade-out {
-  -webkit-animation: fade-out 200ms ease-in-out   forwards;
-          animation: fade-out 200ms ease-in-out   forwards;
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
 }
 
 html {
@@ -522,9 +522,8 @@ button:active .button_top {
 }
 
 .header .overlay {
-  display: block;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   top: 6.5rem;
   right: 0px;
   bottom: 0px;

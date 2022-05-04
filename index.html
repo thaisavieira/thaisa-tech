@@ -21,10 +21,10 @@
 
 <body>
   <header class="header">
-    <div class="overlay has-fade "></div>
-    <nav class=" container flex flex-jc-sb flex-ai-c">
+    <div class="overlay has-fade hide-for-desktop"></div>
+    <nav class=" container container--pall flex flex-jc-sb flex-ai-c">
       <a href="/" class="header__logo">
-        <img src="./src/Thaísa Vieira Icon.png" alt="thaiLogo">
+        <img src="/src/Thaísa Vieira Icon.png" alt="thaiLogo">
       </a>
       <a id='btnHamburger' href="#" class="header__toggle  hide-for-desktop" href="#">
         <span></span>
@@ -35,14 +35,17 @@
         <a href="#content1" class="anchor">Home</a><a href="#content2" class="anchor">Habilidades</a><a href="#content3"
           class="anchor">Projetos</a><a href="#content4" class="anchor">Sobre</a>
       </div>
-      <a href="#" class="button header__cta hide-for-mobile">Contato</a>
+<a href="#contact">
+      <button class="button header__cta hide-for-mobile"id='amoBotao'>Contato</button>
+    </a>
+
     </nav>
     <div class="header__menu has-fade hide-for-desktop">
-      <a href="http://">Home</a>
-      <a href="http://">Habilidades</a>
-      <a href="http://">Projetos</a>
-      <a href="http://">Sobre</a>
-      <a href="http://">Contato</a>
+      <a href="#content1">Home</a>
+      <a href="#content2">Habilidades</a>
+      <a href="#content3">Projetos</a>
+      <a href="#content4">Sobre</a>
+      <a href="#contact">Contato</a>
     </div>
   </header>
 
@@ -173,6 +176,7 @@
 
   </div>
   <div class="contact">
+   <section id="contact">
     <h3>💻Contato</h3>
   </div>
   <div class="contactMeFlex">
@@ -211,6 +215,7 @@
         </form>
       </div>
 
+   </section>
     </div>
   </div>
   <br>
