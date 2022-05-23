@@ -5,7 +5,7 @@
   <script src="https://kit.fontawesome.com/cebda3a8f1.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/jpg" sizes="32x32" href="./src/icon.jpg">
+  <link rel="icon" type="image/png" href="./src/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
     <div class="overlay has-fade hide-for-desktop"></div>
     <nav class=" container container--pall flex flex-jc-sb flex-ai-c">
       <a href="/" class="header__logo">
-        <img src="/src/Thaísa Vieira Icon.png" alt="thaiLogo">
+        <img src="./src/Thaísa Vieira Icon.png" alt="thaiLogo">
       </a>
       <a id='btnHamburger' href="#" class="header__toggle  hide-for-desktop" href="#">
         <span></span>
@@ -49,54 +49,56 @@
     </div>
   </header>
 
-  <div class="flexBoxHome" id="content1" class="content1">
-    <div class="textBox">
-      <div class="introduction">
-        Eu sou Thaísa Vieira,
+  <div class="section aberto">
+    <div class="flexBoxHome" id="content1" class="content1">
+      <div class="textBox">
+        <div class="introduction">
+          Eu sou Thaísa Vieira,
+        </div>
+        <div class="introduction_2">
+          desenvolvedora front end.
+        </div>
       </div>
-      <div class="introduction_2">
-        desenvolvedora front end.
+      <div class="hide-on-small-only">
+        <picture>
+          <source media="(max-width:375px)" srcset="imagemPrincipal.png">
+          <source media="(max-width:15px)" srcset="15px.png">
+          <img src="./src/imagemPrincipal.png">
+        </picture>
       </div>
     </div>
-    <div class="hide-on-small-only">
-      <picture>
-        <source media="(max-width:375px)" srcset="imagemPrincipal.png">
-        <source media="(max-width:15px)" srcset="15px.png">
-        <source media="(max-width:4px)" srcset="4px.png">
-        <source media="(max-width:1px)" srcset="1px.png">
-        <img src="./src/imagemPrincipal.png">
-      </picture>
+  </div>
+  <div id="section">
+    <div  id="content2" class="content2">
+      <h3>💻 Habilidades </h3>
     </div>
-  </div>
-  <div class="skills" id="content2" class="content2">
-    <h3>💻 Habilidades </h3>
-  </div>
-  <div class="flexContainerHabilidades">
-    <div class="habilidadesContainer">
-      <div class="itemHabilidades">
-        <div class="HTML">
-          <p> <i class="fa-brands fa-html5 fa-2xl"></i>
-          <p>HTML</p>
-        </div>
-
-        <div class="CSS">
-          <p><i class="fa-brands fa-css3-alt fa-2xl"></i>
-          <p>CSS</p>
-        </div>
-
-        <div class="JS">
-          <p></p><i class="fa-brands fa-js-square fa-2xl"></i>
-          <p>JavaScript</p>
-        </div>
-
-        <div class="Responsividade">
-          <p><i class="fa-solid fa-laptop-code fa-2xl"></i>
-          <p>Responsividade</p>
-        </div>
-
-        <div class="GIT">
-          <p><i class="fa-brands fa-git-square fa-2xl"></i>
-          <p>Versionameno</p>
+    <div class="flexContainerHabilidades">
+      <div class="habilidadesContainer">
+        <div class="itemHabilidades">
+          <div class="HTML">
+            <p> <i class="fa-brands fa-html5 fa-2xl"></i>
+            <p>HTML</p>
+          </div>
+  
+          <div class="CSS">
+            <p><i class="fa-brands fa-css3-alt fa-2xl"></i>
+            <p>CSS</p>
+          </div>
+  
+          <div class="JS">
+            <p></p><i class="fa-brands fa-js-square fa-2xl"></i>
+            <p>JavaScript</p>
+          </div>
+  
+          <div class="Responsividade">
+            <p><i class="fa-solid fa-laptop-code fa-2xl"></i>
+            <p>Responsividade</p>
+          </div>
+  
+          <div class="GIT">
+            <p><i class="fa-brands fa-git-square fa-2xl"></i>
+            <p>Versionameno</p>
+          </div>
         </div>
       </div>
     </div>
@@ -221,5 +223,4 @@
   <br>
   <script src="./app/js/script.js"></script>
 </body>
-
 </html>

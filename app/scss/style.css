@@ -112,6 +112,10 @@ a:hover {
   color: #e8e3e3;
 }
 
+.aberto {
+  display: block;
+}
+
 .container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
